@@ -1,22 +1,28 @@
 import React from 'react';
 import { useQuery } from 'convex/react';
 import { api } from '../../convex/_generated/api';
+import Button from '@/components/ui/button';
 
 function Home() {
-  // Ping Convex to get all PM leaders
+  // Fetch PM leaders
   const leaders = useQuery(api.pmLeaders.getAll);
 
   if (leaders === undefined) {
-    // Data is still loading
     return <div>Loading...</div>;
   }
+
   return (
-    <div>
-      <h1>PM Leaders</h1>
+    <div className="p-4">
+      <h1 className="text-3xl font-bold mb-4">PM Leaders</h1>
+      <Button onClick={() => console.log('Add Leader')} className="mb-4">
+        Add Leader
+      </Button>
       {leaders.length > 0 ? (
-        <ul>
+        <ul className="space-y-2">
           {leaders.map((leader: any) => (
-            <li key={leader._id}>{leader.name}</li>
+            <li key={leader._id} className="p-4 bg-white shadow rounded-lg">
+              {leader.name}
+            </li>
           ))}
         </ul>
       ) : (
@@ -25,4 +31,5 @@ function Home() {
     </div>
   );
 }
+
 export default Home;
