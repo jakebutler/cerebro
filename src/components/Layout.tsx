@@ -28,6 +28,11 @@ const Layout = () => {
                   Add Person
                 </Link>
               </li>
+              <li>
+                <Link to="/design-system" className="text-gray-600 hover:text-gray-900">
+                  Design System
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
