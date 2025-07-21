@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 // Comment out convex imports until we have Convex set up
 // import { useQuery, useMutation } from 'convex/react';
 // import { api } from '../lib/api-placeholder';
-import type { PMLeader, Id } from '../lib/types';
+import type { PMLeader, Id } from '../types/types';
 
 // Placeholder data for development
 const mockPMLeader: PMLeader = {
