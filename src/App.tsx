@@ -7,6 +7,7 @@ import ProfileDetail from './pages/ProfileDetail'
 import VerificationDashboard from './pages/VerificationDashboard'
 import SuggestedEdits from './pages/SuggestedEdits'
 import AddPerson from './pages/AddPerson'
+import DesignSystem from './pages/DesignSystem'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="verify" element={<VerificationDashboard />} />
         <Route path="suggested-edits" element={<SuggestedEdits />} />
         <Route path="add" element={<AddPerson />} />
+        <Route path="design-system" element={<DesignSystem />} />
       </Route>
     </Routes>
   )
