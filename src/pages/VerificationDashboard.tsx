@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { useQuery, useMutation } from 'convex/react';
 // import { api } from '../lib/api-placeholder';
-import type { VerificationQueueItem } from '../lib/types';
+import type { VerificationQueueItem } from '../types/types';
 
 // Placeholder verification queue data
 const mockVerificationQueue: VerificationQueueItem[] = [

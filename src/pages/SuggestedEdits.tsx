@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { useQuery, useMutation } from 'convex/react';
 // import { api } from '../lib/api-placeholder';
-import type { SuggestedEdit } from '../lib/types';
+import type { SuggestedEdit } from '../types/types';
 
 // Helper to format date from timestamp
 const formatDate = (timestamp: number) => {
