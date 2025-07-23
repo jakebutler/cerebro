@@ -1,0 +1,23 @@
+{
+  "cerebro": {
+    "id": "cerebro",
+    "slug": "cerebro",
+    "title": "Cerebro",
+    "subtitle": "A curated database of Product Management thought leaders.",
+    "description": "Cerebro is a web application that stores, displays, and verifies a structured dataset of influential people in software product management. The app allows contributors to view, edit, and verify detailed profile data.",
+    "status": "active",
+    "categories": ["AI Tools", "Product Management"],
+    "technologies": ["React", "TypeScript", "Vite", "Convex", "TailwindCSS"],
+    "startDate": "2024-07-01",
+    "featured": true,
+    "priority": 1,
+    "image": "/images/projects/cerebro-hero.jpg",
+    "screenshots": [],
+    "links": {
+      "github": "https://github.com/jacobbutler/cerebro"
+    },
+    "team": ["Solo Project"],
+    "client": "Internal",
+    "tags": ["MVP", "Production", "Open Source"]
+  }
+}
